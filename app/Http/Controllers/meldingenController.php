@@ -30,7 +30,7 @@ if(empty($melder)) {
 }
 $overig = $_POST['overig'];
 
-if(isset($errors)) {
+if(!empty($errors)) {
     var_dump($errors);
     die();
 }
